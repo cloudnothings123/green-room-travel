@@ -1,4 +1,7 @@
+/* min-width 1391 px */
 /* general */
+
+@media screen and (max-width: 1920px) {
 
 body {
     font-family: "Kumbh Sans", sans-serif;
@@ -16,11 +19,6 @@ a, a:visited, a:active {
 }
 
 /* header */
-
-i {
-    margin-right: -46em;
-    margin-top: 2em;
-}
 
 ul {
     list-style-type: none;
@@ -93,50 +91,51 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -2em;
     margin-left: 10em;
-    margin-bottom: -20em;
+    margin-bottom: -12em;
     background-image: url('https://i.stack.imgur.com/ukKPv.jpg');
     background-position: -22em -12em;
     background-size: 110em;
     background-repeat: no-repeat;
     text-shadow: .2em .2em .1em white;
+    width: 85%;
 }
 
 .intro-image-band {
+    display: flex;
+    justify-content: center;
     position: relative;
-    bottom: 40em;
-    left: 55em;
     animation: fadeIn;
     animation-delay: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
+    width: 20em;
+    height: 20em;
 }
 
-.intro-image-bus {
-    position: relative;
-    bottom: 25em;
-    right: 32em;
-    animation: fadeIn;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    height: 15em;
-    width: 15em;
+.intro-top-segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .home-top-h2 {
     animation: fadeIn 2s;
+    display: flex;
+    justify-content: center;
+    width: 75%;
 }
 
 .home-bottom-h2 {
     margin-top: -.6em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 1.5em;
     animation: fadeIn 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
     opacity: 0;
+    width: 90%;
 }
 
 @keyframes fadeIn {
@@ -447,4 +446,177 @@ to {
     display: flex;
     justify-content: space-between;
     margin-right: 20%;
+}
+
+.about-privacy {
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 1330px) {
+    .intro-image-band {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        margin-left: 25%;
+        font-size: 3em;
+        width: 50%;
+        margin-bottom: 0em;
+        border: .1px white solid;
+        background: white;
+        border-radius: 20em;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    h2 {
+        font-size: 6em;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        margin-left: 25%;
+        font-size: 3em;
+        width: 50%;
+        border: .1px white solid;
+        background: white;
+        border-radius: 20em;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    h2 {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        align-items: center;
+        margin-right: 1em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square.png');
+    }
+
+    .header-main-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+        font-size: 3em;
+    }
+
+    body {
+        margin: 0em;
+        width: 100%;
+    }
+
+    .home-intro {
+        display: none;
+        margin: 0em;
+    }
+
+    .polka-dot {
+        margin-top: -8.5em;
+    }
+
+    .strategy-item p {
+        font-size: 1em;
+    }
+
+    .airplane {
+        width: 17em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square.png');
+        margin: 0;
+    }
+
+    .about-headline {
+        display: flex;
+        justify-content: center;
+        margin-left: 25%;
+        font-size: 2em;
+        width: 50%;
+        margin-bottom: 0em;
+        border: .1px white solid;
+        background: white;
+        border-radius: 20em;
+        margin-top: 0;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us img {
+        width: 18em;
+    }
+
+    .about-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-bottom {
+        margin-top: 7em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-item {
+        text-align: center;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 2em;
+        margin-top: 4.5em;
+    }
+
+    .services-headline {
+        text-align: center;
+    }
+
+    .services-item p {
+        font-size: 1em;
+    }
+
+    .passport-image {
+        width: 15em;
+    }
 }
