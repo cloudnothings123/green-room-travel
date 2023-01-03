@@ -612,11 +612,51 @@ to {
         text-align: center;
     }
 
+    .strategy-image {
+        width: 10em;
+    }
+
     .services-item p {
         font-size: 1em;
     }
 
     .passport-image {
         width: 15em;
+    }
+
+    .service-image {
+        width: 10em;
+    }
+
+    .contact-headline {
+        text-align: center;
+    }
+
+    .contact-reach {
+        text-align: center;
+        font-size: 1.5em;
+        border: .1px white solid;
+        background: white;
+        border-radius: 20em;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .contact-item-bottom {
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        width: 50%;
+        margin-top: 5em;
+        padding-bottom: 2em;
+    }
+
+    .about-the-team {
+        text-align: center;
+    }
+
+    .privacy {
+        text-align: center;
+        margin-top: 5em;
     }
 }
