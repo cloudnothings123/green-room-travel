@@ -452,6 +452,10 @@ to {
     text-align: center;
 }
 
+.privacy {
+    margin-top: 3em;
+}
+
 }
 
 @media screen and (max-width: 1330px) {
@@ -610,6 +614,9 @@ to {
 
     .services-headline {
         text-align: center;
+        display: flex;
+        font-size: 2em;
+
     }
 
     .strategy-image {
