@@ -1,4 +1,5 @@
-const fadingIn = new IntersectionObserver(entries => {
+if (window.innerWidth > 600) {
+    const fadingIn = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fading-animation')
@@ -7,3 +8,4 @@ const fadingIn = new IntersectionObserver(entries => {
 })
 
 fadingIn.observe(document.querySelector('.privacy-heading'))
+}

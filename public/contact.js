@@ -1,4 +1,5 @@
-const fadingIn = new IntersectionObserver(entries => {
+if (window.innerWidth > 600) {
+    const fadingIn = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fading-animation')
@@ -31,3 +32,4 @@ const slidingFromBottom = new IntersectionObserver(entries => {
 })
 
 fadingIn.observe(document.querySelector('.contact-header'))
+}

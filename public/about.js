@@ -1,3 +1,4 @@
+if (window.innerWidth > 600) {
 const fadingIn = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -27,3 +28,6 @@ slidingFromRight.observe(document.querySelector('.one'))
 slidingFromLeft.observe(document.querySelector('.two'))
 slidingFromRight.observe(document.querySelector('.three'))
 slidingFromLeft.observe(document.querySelector('.four'))
+} else {
+
+}
