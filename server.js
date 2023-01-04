@@ -6,6 +6,7 @@ const homeRoutes = require('./routes/home')
 const servicesRoutes = require('./routes/services')
 const aboutRoutes = require('./routes/about')
 const contactRoutes = require('./routes/contact')
+const privacyRoutes = require('./routes/privacy')
 //recognizing dotenv file
 require('dotenv').config({path: './config/.env'})
 //setting ejs as the view format
@@ -19,5 +20,6 @@ app.use('/', homeRoutes)
 app.use('/', servicesRoutes)
 app.use('/', aboutRoutes)
 app.use('/', contactRoutes)
+app.use('/', privacyRoutes)
 //connecting to port
 app.listen(process.env.PORT, () => console.log('Server running'))

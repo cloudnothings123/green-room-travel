@@ -31,7 +31,3 @@ const slidingFromBottom = new IntersectionObserver(entries => {
 })
 
 fadingIn.observe(document.querySelector('.contact-header'))
-fadingIn.observe(document.querySelector('.contact-reach'))
-slidingFromBottom.observe(document.querySelector('.one'))
-slidingFromLeft.observe(document.querySelector('.two'))
-slidingFromRight.observe(document.querySelector('.three'))

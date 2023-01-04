@@ -8,6 +8,19 @@ body {
     margin: 0 1em;
 }
 
+textarea {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+input {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+textarea, input {
+    border: .1px black solid;
+    border-radius: .5em;
+}
+
 img {
     height: 20em;
     width: 20em;
@@ -45,6 +58,42 @@ footer {
     justify-content: space-between;
     background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/repeated-square.png');
     margin: 0;
+}
+
+/* privacy */
+
+.privacy-heading {
+    margin: 0;
+    text-align: center;
+    font-size: 5em;
+    background: white;
+    border: .1px white solid;
+    border-radius: 20em;
+    width: 50%;
+    margin-left: 4.4em;
+}
+
+.privacy-background {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png');
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.privacy-background ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 94%;
+    gap: 1em;
+}
+
+.privacy-background .italian {
+    font-style: italic;
+}
+
+.privacy-background h3 {
+    margin-top: 3em;
 }
 
 /* index */
@@ -384,6 +433,31 @@ to {
     align-items: center;
 }
 
+.top-form {
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.bottom-form {
+    text-align: center;
+    padding: 1em;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
 .contact-item-bottom {
     display: flex;
     justify-content: space-between;
@@ -665,5 +739,30 @@ to {
     .privacy {
         text-align: center;
         margin-top: 5em;
+    }
+
+    .privacy-heading {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        font-size: 2em;
+        background: white;
+        border: .1px white solid;
+        border-radius: 20em;
+        margin-left: 3.2em;
+    }
+
+    .privacy-background li {
+        font-size: .8em;
+        margin-right: 2.2em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-form, .bottom-form {
+        flex-direction: column;
     }
 }
